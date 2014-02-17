@@ -90,4 +90,13 @@ public class ImageUtil {
 		byte[] data = bos.toByteArray();
 		return data;
 	}
+	
+	public static boolean isGIF(String url){
+		String[] strings = url.split("\\.");
+		if(strings[strings.length - 1].equalsIgnoreCase("gif")){
+			return true;
+		}
+		return false;
+	}
+	
 }
